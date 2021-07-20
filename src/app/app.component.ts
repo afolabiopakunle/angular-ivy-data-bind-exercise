@@ -7,6 +7,10 @@ import { Component, VERSION } from '@angular/core';
 })
 export class AppComponent  {
   username = ''
+  output = '';
 
-  
+  addUser() {
+    this.output = this.username;
+    this.username = '';
+  }
 }
